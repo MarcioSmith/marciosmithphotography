@@ -1,8 +1,8 @@
 import React from 'react';
+import Link from 'next/link'
 
 import {
   AppBar,
-  Link,
   Toolbar,
   Typography,
   makeStyles
@@ -26,14 +26,8 @@ export default function NavBar() {
       <AppBar position="static" color="inherit">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            <Link href="/" color="inherit">
-              Gallery
-            </Link>
-            <Link href="/about" color="inherit">
-              About
-            </Link>
-            <Link href="/contact" color="inherit">
-              Contact
+            <Link href="/">
+              <a>Home2</a>
             </Link>
           </Typography>
         </Toolbar>
